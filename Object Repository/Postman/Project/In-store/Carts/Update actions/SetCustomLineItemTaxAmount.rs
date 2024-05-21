@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetCustomLineItemTaxAmount</name>
+   <tag></tag>
+   <elementGuidId>b769a3dc-de21-481b-ad71-bb28dcae0e46</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${cart-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setCustomLineItemTaxAmount\&quot;,\n            \&quot;customLineItemId\&quot; : \&quot;${customLineItemId}\&quot;,\n            \&quot;externalTaxAmount\&quot; : {\n              \&quot;totalGross\&quot; : {\n                \&quot;centAmount\&quot; : 2000000,\n                \&quot;currencyCode\&quot; : \&quot;EUR\&quot;\n              },\n              \&quot;taxRate\&quot; : {\n                \&quot;name\&quot; : \&quot;myTaxRate\&quot;,\n                \&quot;amount\&quot; : 0.19,\n                \&quot;country\&quot; : \&quot;DE\&quot;\n              }\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>37d39f46-4579-4033-b058-81931a3cb859</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>4086db1c-a3d9-4b62-962a-dff366f5dbd7</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/in-store/key=${store-key}/carts/${cart-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>f8334fc2-65fc-4f82-94da-32fc1b9f7ed9</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>4cbfdd54-e00e-4e4e-9fbf-ac3ccec6c6ac</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.store-key</defaultValue>
+      <description></description>
+      <id>5af54150-9ead-4e14-8111-f62c59c721d2</id>
+      <masked>false</masked>
+      <name>store-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cart-id</defaultValue>
+      <description></description>
+      <id>ffeb4947-5bbe-4761-ba0a-30945a528f44</id>
+      <masked>false</masked>
+      <name>cart-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cart-version</defaultValue>
+      <description></description>
+      <id>3c4980c2-134d-453c-b2dd-47e73c1b12c5</id>
+      <masked>false</masked>
+      <name>cart-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.customLineItemId</defaultValue>
+      <description></description>
+      <id>7e7fcc51-f5bc-4074-a359-e0255ac9bc7e</id>
+      <masked>false</masked>
+      <name>customLineItemId</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>RemoveRoles</name>
+   <tag></tag>
+   <elementGuidId>3255384d-3b56-4eb4-9219-17a43c4685ad</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${channel-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;removeRoles\&quot;,\n            \&quot;roles\&quot; : [ \&quot;InventorySupply\&quot; ]\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>739f5c2c-2edb-4727-9ccb-04be8cbe0d1d</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>539ed349-229d-4454-82e8-0958d3422b29</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/channels/${channel-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>1dc4bc3d-19c7-46bd-bd9a-2a295a85cb12</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>1d93e40b-fd50-43c5-b313-dc1c43a2146a</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.channel-id</defaultValue>
+      <description></description>
+      <id>a8c45b4f-ecdd-4d9d-92bf-9fef08798c58</id>
+      <masked>false</masked>
+      <name>channel-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.channel-version</defaultValue>
+      <description></description>
+      <id>e6852b14-dca9-4efa-a549-86bb14144eae</id>
+      <masked>false</masked>
+      <name>channel-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

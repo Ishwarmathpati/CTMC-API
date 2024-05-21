@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetLineItemSupplyChannel</name>
+   <tag></tag>
+   <elementGuidId>7aedfa48-3e9e-490f-9275-e524103b5448</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${cart-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setLineItemSupplyChannel\&quot;,\n            \&quot;lineItemId\&quot; : \&quot;${lineItemId}\&quot;,\n            \&quot;supplyChannel\&quot; : {\n              \&quot;typeId\&quot; : \&quot;channel\&quot;,\n              \&quot;id\&quot; : \&quot;${channel-id}\&quot;\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>ae9b38a4-0fee-4e4e-8ccc-37e0496a6598</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>7465f551-95f8-433b-8c14-30f03f8c4ca1</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/me/carts/${cart-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>05c87a6f-a665-4be5-819c-30096d67a51d</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>4dd63061-c19a-4026-9e6b-893f71568312</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cart-id</defaultValue>
+      <description></description>
+      <id>80f1d3b7-8a76-4483-943e-e4369c923746</id>
+      <masked>false</masked>
+      <name>cart-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cart-version</defaultValue>
+      <description></description>
+      <id>bb935606-96ec-497e-a19a-7a7fe1e07fc6</id>
+      <masked>false</masked>
+      <name>cart-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.lineItemId</defaultValue>
+      <description></description>
+      <id>2d7fc3f7-b358-46f6-b025-eadced3d3b82</id>
+      <masked>false</masked>
+      <name>lineItemId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.channel-id</defaultValue>
+      <description></description>
+      <id>c9fe603c-c340-48a2-9a0a-78ddda0b18a7</id>
+      <masked>false</masked>
+      <name>channel-id</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

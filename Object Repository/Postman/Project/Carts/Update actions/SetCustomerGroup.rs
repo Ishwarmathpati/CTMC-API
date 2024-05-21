@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetCustomerGroup</name>
+   <tag></tag>
+   <elementGuidId>9d223f83-f2dd-48e0-8eed-93b70abde0b9</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${cart-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setCustomerGroup\&quot;,\n            \&quot;customerGroup\&quot; : {\n              \&quot;id\&quot; : \&quot;${customer-group-id}\&quot;,\n              \&quot;typeId\&quot; : \&quot;customer-group\&quot;\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>8c1f01cf-f316-48fa-a881-af8d91f30fcc</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>def283fd-a806-4eab-a1f3-2833ceb3c445</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/carts/${cart-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>07aabc42-3ebd-47e9-85e8-3a393d75f8ff</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>c37a74d0-59f4-4f31-84de-6e85c11f7669</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cart-id</defaultValue>
+      <description></description>
+      <id>da24f9a4-b0a5-49e5-b417-11d87496bd49</id>
+      <masked>false</masked>
+      <name>cart-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cart-version</defaultValue>
+      <description></description>
+      <id>efc5243a-57b2-47a1-aeba-6f19b7736685</id>
+      <masked>false</masked>
+      <name>cart-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.customer-group-id</defaultValue>
+      <description></description>
+      <id>ef365531-f048-4dbc-b666-3fe5a669cf90</id>
+      <masked>false</masked>
+      <name>customer-group-id</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

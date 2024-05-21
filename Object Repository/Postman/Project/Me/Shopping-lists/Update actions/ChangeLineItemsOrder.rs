@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ChangeLineItemsOrder</name>
+   <tag></tag>
+   <elementGuidId>bc18a159-81c9-4899-bf19-88b4bed5dadf</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${shopping-list-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;changeLineItemsOrder\&quot;,\n            \&quot;lineItemOrder\&quot; : [ \&quot;${lineItemId2}\&quot;, \&quot;${lineItemId}\&quot; ]\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>4c6499df-f66e-4429-b131-6f238df26689</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>95e643e9-5dfb-4186-ac82-c677eed8e502</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/me/shopping-lists/${shopping-list-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>3431ef44-06ae-4ce1-a800-d09af3159189</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>d6c1e75f-dae1-43da-8111-162b65b2b50c</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.shopping-list-id</defaultValue>
+      <description></description>
+      <id>aa18a06e-bd28-4374-bcc9-e522bbee05c7</id>
+      <masked>false</masked>
+      <name>shopping-list-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.shopping-list-version</defaultValue>
+      <description></description>
+      <id>e15556be-0e70-4ff6-a035-0a161f3aa6b4</id>
+      <masked>false</masked>
+      <name>shopping-list-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.lineItemId2</defaultValue>
+      <description></description>
+      <id>b1b61af6-fa14-4bae-a8b5-e939f4c0470a</id>
+      <masked>false</masked>
+      <name>lineItemId2</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.lineItemId</defaultValue>
+      <description></description>
+      <id>8836bc19-5018-4c9c-bcfd-fc1ff1fb0c87</id>
+      <masked>false</masked>
+      <name>lineItemId</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

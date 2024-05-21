@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>RequestQuoteRenegotiation</name>
+   <tag></tag>
+   <elementGuidId>8eba459a-8da4-404a-82a3-5ca7f5cc2326</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${quote-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;requestQuoteRenegotiation\&quot;,\n            \&quot;buyerComment\&quot; : \&quot;Please also give me a 10% discount on the red T-shirts.\&quot;\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>798b3c5d-43b4-44ac-aa4e-fd736988bccc</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>c0e255d1-a57c-4fb0-8644-614a72ad1295</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/as-associate/${associate-id}/in-business-unit/key=${business-unit-key}/quotes/${quote-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>92f92596-0fec-421b-acfa-07bab696eb9d</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>8d0a39f6-4b85-4d5a-8282-6c8de66c3bf2</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.associate-id</defaultValue>
+      <description></description>
+      <id>02d34ef5-a5fb-4651-a7b6-8bb282ecd4a0</id>
+      <masked>false</masked>
+      <name>associate-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.business-unit-key</defaultValue>
+      <description></description>
+      <id>197eba28-8926-4c3e-969b-c02d874809e1</id>
+      <masked>false</masked>
+      <name>business-unit-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.quote-id</defaultValue>
+      <description></description>
+      <id>0098488b-8f9c-4163-b393-47509c5d6d81</id>
+      <masked>false</masked>
+      <name>quote-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.quote-version</defaultValue>
+      <description></description>
+      <id>d8dca666-f942-4067-b175-61d6a31ea29d</id>
+      <masked>false</masked>
+      <name>quote-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetSearchKeywords</name>
+   <tag></tag>
+   <elementGuidId>050279e7-359c-4ab8-82ae-d727fd68faaa</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${product-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setSearchKeywords\&quot;,\n            \&quot;searchKeywords\&quot; : {\n              \&quot;en\&quot; : [ {\n                \&quot;text\&quot; : \&quot;Super Keyword\&quot;\n              }, {\n                \&quot;text\&quot; : \&quot;What a keyword\&quot;,\n                \&quot;suggestTokenizer\&quot; : {\n                  \&quot;type\&quot; : \&quot;whitespace\&quot;\n                }\n              } ],\n              \&quot;de\&quot; : [ {\n                \&quot;text\&quot; : \&quot;Ein super Schlüsselwort\&quot;,\n                \&quot;suggestTokenizer\&quot; : {\n                  \&quot;type\&quot; : \&quot;custom\&quot;,\n                  \&quot;inputs\&quot; : [ \&quot;wow wow wow\&quot;, \&quot;super genial\&quot;, \&quot;der Wahnsinn\&quot; ]\n                }\n              } ]\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>65f8cb38-18fd-4c9e-b939-1a84ee6cb720</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>9fa6b3fd-2d82-493e-b69b-54eb1ed91267</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/products/${product-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>a175a2de-17b0-4af3-897f-68e4cc1c07de</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>5c8724a8-be77-4a5d-8365-02800aca8e5f</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-id</defaultValue>
+      <description></description>
+      <id>c9000cd5-1a29-41bf-a322-6357e14054cb</id>
+      <masked>false</masked>
+      <name>product-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-version</defaultValue>
+      <description></description>
+      <id>d5328ebf-2ebb-471a-b51d-99573215088e</id>
+      <masked>false</masked>
+      <name>product-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

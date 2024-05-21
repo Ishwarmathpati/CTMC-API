@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>TransitionLineItemState</name>
+   <tag></tag>
+   <elementGuidId>c10c469c-2749-47fc-b97b-9b745229396a</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${order-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;transitionLineItemState\&quot;,\n            \&quot;lineItemId\&quot; : \&quot;${lineItemId}\&quot;,\n            \&quot;quantity\&quot; : 3,\n            \&quot;fromState\&quot; : {\n              \&quot;typeId\&quot; : \&quot;state\&quot;,\n              \&quot;id\&quot; : \&quot;${state-id}\&quot;\n            },\n            \&quot;toState\&quot; : {\n              \&quot;typeId\&quot; : \&quot;state\&quot;,\n              \&quot;id\&quot; : \&quot;${state-id}\&quot;\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>87f40c00-5786-4216-a71c-47f1bc086499</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>1a0fda6d-250a-4aae-94b7-a4b8ba98a5d4</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/orders/${order-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>520fda9a-34b1-4eb0-be84-72d21e0e34c9</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>041fb3a3-a218-4429-b480-df5fc4e117cf</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.order-id</defaultValue>
+      <description></description>
+      <id>f1fa0b0d-0f05-4bcc-9282-ea75ab10b545</id>
+      <masked>false</masked>
+      <name>order-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.order-version</defaultValue>
+      <description></description>
+      <id>396221e4-0323-4764-9cda-165d0074e311</id>
+      <masked>false</masked>
+      <name>order-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.lineItemId</defaultValue>
+      <description></description>
+      <id>197a47cb-b048-4dfe-b5bc-a5dfc9c6d852</id>
+      <masked>false</masked>
+      <name>lineItemId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.state-id</defaultValue>
+      <description></description>
+      <id>9af093fe-5d82-4895-9fd2-f684c589beb1</id>
+      <masked>false</masked>
+      <name>state-id</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

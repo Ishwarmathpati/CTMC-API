@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>Get QuoteRequest by key</name>
+   <tag></tag>
+   <elementGuidId>e023a76e-4bfe-4e02-a1cf-d33a7af313e7</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>d6218363-2228-497d-8c6c-bfda6b8c324f</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>791b9de1-0eae-4a21-8af3-db1764ae1b8c</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${host}/${project-key}/as-associate/${associate-id}/in-business-unit/key=${business-unit-key}/quote-requests/key=${quote-request-key}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>024a1b76-8b3a-4684-bc8a-dbc0934e2fd1</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>514e84d1-199f-4ed6-85e8-edc4dbb181d5</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.associate-id</defaultValue>
+      <description></description>
+      <id>1fcc7f17-7e4a-4e3f-8132-e6ffcc24346e</id>
+      <masked>false</masked>
+      <name>associate-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.business-unit-key</defaultValue>
+      <description></description>
+      <id>48ab73e3-32e5-49d0-8980-0fa7d1c1e9c2</id>
+      <masked>false</masked>
+      <name>business-unit-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.quote-request-key</defaultValue>
+      <description></description>
+      <id>8b36bf96-5dc7-4e7a-80f2-c82107f4908c</id>
+      <masked>false</masked>
+      <name>quote-request-key</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

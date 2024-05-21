@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>Update BusinessUnit by id</name>
+   <tag></tag>
+   <elementGuidId>7c846be3-798e-4b24-a254-30711c67edf3</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;version\&quot; : 3,\n  \&quot;actions\&quot; : [ {\n    \&quot;action\&quot; : \&quot;addAddress\&quot;,\n    \&quot;address\&quot; : {\n      \&quot;streetName\&quot; : \&quot;Any Street\&quot;,\n      \&quot;streetNumber\&quot; : \&quot;1337\&quot;,\n      \&quot;postalCode\&quot; : \&quot;11111\&quot;,\n      \&quot;city\&quot; : \&quot;Any City\&quot;,\n      \&quot;country\&quot; : \&quot;US\&quot;\n    }\n  } ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>2e48a31a-6147-4d59-91c5-c116c190b3ea</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>55f2ff5b-3db4-406b-92bd-ae4f98f1ed63</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/as-associate/${associate-id}/business-units/${business-unit-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>2bd9f038-f16c-4249-93d4-4c65a1255c96</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>8bcf2cb5-f043-4b10-b06c-5cf94bfd4250</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.associate-id</defaultValue>
+      <description></description>
+      <id>444e0198-539c-4c9e-a07f-4ff27411fd30</id>
+      <masked>false</masked>
+      <name>associate-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.business-unit-id</defaultValue>
+      <description></description>
+      <id>bae62dd4-9a97-4bbf-ba50-fb3795f03c23</id>
+      <masked>false</masked>
+      <name>business-unit-id</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

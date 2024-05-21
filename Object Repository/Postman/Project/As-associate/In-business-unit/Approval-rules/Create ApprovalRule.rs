@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>Create ApprovalRule</name>
+   <tag></tag>
+   <elementGuidId>4f27a4ea-6b95-4e44-9617-bc941c584d45</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot; : \&quot;my approval rule\&quot;,\n  \&quot;status\&quot; : \&quot;Inactive\&quot;,\n  \&quot;predicate\&quot; : \&quot;totalPrice.centAmount \u003e\u003d 100000\&quot;,\n  \&quot;approvers\&quot; : {\n    \&quot;tiers\&quot; : [ {\n      \&quot;and\&quot; : [ {\n        \&quot;or\&quot; : [ {\n          \&quot;associateRole\&quot; : {\n            \&quot;typeId\&quot; : \&quot;associate-role\&quot;,\n            \&quot;key\&quot; : \&quot;project-team-lead\&quot;\n          }\n        }, {\n          \&quot;associateRole\&quot; : {\n            \&quot;typeId\&quot; : \&quot;associate-role\&quot;,\n            \&quot;key\&quot; : \&quot;project-team-lead-substitute\&quot;\n          }\n        } ]\n      } ]\n    } ]\n  },\n  \&quot;requesters\&quot; : [ {\n    \&quot;associateRole\&quot; : {\n      \&quot;typeId\&quot; : \&quot;associate-role\&quot;,\n      \&quot;key\&quot; : \&quot;project-manager\&quot;\n    }\n  } ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>43a6e8d9-c999-4ff2-9244-056309b476a5</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>7291f500-5e6b-4c35-9633-d66ca4d130f4</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/as-associate/${associate-id}/in-business-unit/key=${business-unit-key}/approval-rules</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>1800b39d-919c-4380-b834-3e64731a62f7</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>eb760a9e-5db4-4245-8a49-214b55565efa</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.associate-id</defaultValue>
+      <description></description>
+      <id>364003ec-d062-46bf-b7c9-2d9743873929</id>
+      <masked>false</masked>
+      <name>associate-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.business-unit-key</defaultValue>
+      <description></description>
+      <id>2ff7a433-cd8d-4921-a0b2-4098b19d1f9c</id>
+      <masked>false</masked>
+      <name>business-unit-key</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

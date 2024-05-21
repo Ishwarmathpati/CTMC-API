@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetDiscountedPrice</name>
+   <tag></tag>
+   <elementGuidId>a93399cc-9b30-4517-9959-581f0ac16ea9</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${standalone-price-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setDiscountedPrice\&quot;,\n            \&quot;discounted\&quot; : {\n              \&quot;value\&quot; : {\n                \&quot;type\&quot; : \&quot;centPrecision\&quot;,\n                \&quot;currencyCode\&quot; : \&quot;EUR\&quot;,\n                \&quot;centAmount\&quot; : 2990,\n                \&quot;fractionDigits\&quot; : 2\n              },\n              \&quot;discount\&quot; : {\n                \&quot;typeId\&quot; : \&quot;product-discount\&quot;,\n                \&quot;id\&quot; : \&quot;${product-discount-id}\&quot;\n              }\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>81755d83-9af4-460d-8136-9dd402cccaaf</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>0a9873c1-10b4-4f8b-a15d-eab98d2af68f</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/standalone-prices/${standalone-price-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>048c14d8-cfc4-44e5-ac2b-fd91c7118766</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>7dedb4cc-7baa-43ff-921a-df66d4dd485d</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.standalone-price-id</defaultValue>
+      <description></description>
+      <id>31cbba11-559c-472c-acd8-00e829606720</id>
+      <masked>false</masked>
+      <name>standalone-price-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.standalone-price-version</defaultValue>
+      <description></description>
+      <id>7b99e362-f027-4722-be3a-5ce932948923</id>
+      <masked>false</masked>
+      <name>standalone-price-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-discount-id</defaultValue>
+      <description></description>
+      <id>1c12dc07-e494-4956-a4fb-7fa2fb7ecef8</id>
+      <masked>false</masked>
+      <name>product-discount-id</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

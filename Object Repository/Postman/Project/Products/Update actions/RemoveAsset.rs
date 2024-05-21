@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>RemoveAsset</name>
+   <tag></tag>
+   <elementGuidId>1fb5f4c1-c8cf-4ca3-8f03-c55b40f1d7ad</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${product-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;removeAsset\&quot;,\n            \&quot;variantId\&quot; : 1,\n            \&quot;assetId\&quot; : \&quot;${assetId}\&quot;\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>15759af0-32cf-497e-800f-f7325ca37ac7</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>9888335a-203e-47ec-9915-651c3d1a393a</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/products/${product-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>f83b8e56-7a9d-4d6d-aef2-fa89637e5f7a</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>7715660c-751b-4fd8-a4db-6bcbf5876d4c</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-id</defaultValue>
+      <description></description>
+      <id>1b42a150-2546-4ac7-9bcc-18782b3d5820</id>
+      <masked>false</masked>
+      <name>product-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-version</defaultValue>
+      <description></description>
+      <id>f03339b4-6b45-4776-9572-5bdd1d6871fe</id>
+      <masked>false</masked>
+      <name>product-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.assetId</defaultValue>
+      <description></description>
+      <id>d573805c-89c7-41ec-a86f-d08033bd34b5</id>
+      <masked>false</masked>
+      <name>assetId</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

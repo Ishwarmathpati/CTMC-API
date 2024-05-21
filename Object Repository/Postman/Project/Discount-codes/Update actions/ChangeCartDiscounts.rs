@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ChangeCartDiscounts</name>
+   <tag></tag>
+   <elementGuidId>123bb41a-f711-4966-9da4-c8ae70f6639f</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${discount-code-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;changeCartDiscounts\&quot;,\n            \&quot;cartDiscounts\&quot; : [ {\n              \&quot;typeId\&quot; : \&quot;cart-discount\&quot;,\n              \&quot;id\&quot; : \&quot;${cartDiscountId}\&quot;\n            } ]\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>0401c70f-4338-4e79-8035-f2e19052bf38</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>cc7edf6c-6efa-4fae-8c83-05c9902f48a7</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/discount-codes/${discount-code-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>e66e9e70-67e7-4be8-a830-9224e5554cfe</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>780d2863-5367-41e3-8030-955a079a2d8f</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.discount-code-id</defaultValue>
+      <description></description>
+      <id>4514f716-e046-441b-8071-7afca54d8398</id>
+      <masked>false</masked>
+      <name>discount-code-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.discount-code-version</defaultValue>
+      <description></description>
+      <id>97fd8dcf-7d09-4e56-8c22-02e01de7cf5d</id>
+      <masked>false</masked>
+      <name>discount-code-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.cartDiscountId</defaultValue>
+      <description></description>
+      <id>b555e580-a0fa-431a-a7e5-496601a46b5b</id>
+      <masked>false</masked>
+      <name>cartDiscountId</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

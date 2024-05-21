@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ChangePlainEnumValueOrder</name>
+   <tag></tag>
+   <elementGuidId>305bcfb3-cbf5-4375-8b79-660fccd05b9c</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${product-type-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;changePlainEnumValueOrder\&quot;,\n            \&quot;attributeName\&quot; : \&quot;your-attribute-name\&quot;,\n            \&quot;values\&quot; : [ {\n              \&quot;key\&quot; : \&quot;enum key 1\&quot;,\n              \&quot;label\&quot; : \&quot;enum value 1\&quot;\n            }, {\n              \&quot;key\&quot; : \&quot;enum key 2\&quot;,\n              \&quot;label\&quot; : \&quot;enum value 2\&quot;\n            }, {\n              \&quot;key\&quot; : \&quot;enum key 3\&quot;,\n              \&quot;label\&quot; : \&quot;enum value 3\&quot;\n            } ]\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>e93032a8-94ec-4ca0-8cb9-a017b0b11731</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>f6e1ec69-de92-4db0-b4e3-88276086760b</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/product-types/${product-type-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>6ad601b4-d2f1-4189-8c6e-3fbe19ab3622</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>ffdf3c01-00f5-4598-8452-0a3f323ccf5c</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-type-id</defaultValue>
+      <description></description>
+      <id>e0cd1b2b-e2ba-4c0a-82df-cca972c49717</id>
+      <masked>false</masked>
+      <name>product-type-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-type-version</defaultValue>
+      <description></description>
+      <id>f13fc343-ac06-4bce-8316-50c8d1ba85b0</id>
+      <masked>false</masked>
+      <name>product-type-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ChangeLocalizedEnumValueLabel</name>
+   <tag></tag>
+   <elementGuidId>1fa198ae-c7e1-4723-b843-45c95d4bf550</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${product-type-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;changeLocalizedEnumValueLabel\&quot;,\n            \&quot;attributeName\&quot; : \&quot;your-attribute-name\&quot;,\n            \&quot;newValue\&quot; : {\n              \&quot;key\&quot; : \&quot;existing localized enum key\&quot;,\n              \&quot;label\&quot; : {\n                \&quot;en\&quot; : \&quot;new English label for this enum\&quot;,\n                \&quot;de\&quot; : \&quot;new German label for this enum\&quot;\n              }\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>2aefcfe0-a02d-4168-8eb3-17ca0a50ad03</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>bbb8684d-ed9f-43c6-9bf5-e9557c2d9343</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/product-types/${product-type-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>a3d97817-9520-4ebd-9c9c-688c4c55c8c0</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>fe5e1a98-5685-45ef-aa98-1192d23d6949</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-type-id</defaultValue>
+      <description></description>
+      <id>ae64fe4b-b72a-4d95-83a2-f83daf4ea831</id>
+      <masked>false</masked>
+      <name>product-type-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-type-version</defaultValue>
+      <description></description>
+      <id>36bbfc50-c4f8-4236-aa53-6a5616d1b429</id>
+      <masked>false</masked>
+      <name>product-type-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

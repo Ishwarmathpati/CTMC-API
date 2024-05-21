@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ReplaceTaxRate</name>
+   <tag></tag>
+   <elementGuidId>938d23ee-2669-46da-b1d7-a29ec40f0e74</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${tax-category-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;replaceTaxRate\&quot;,\n            \&quot;taxRateId\&quot; : \&quot;${taxRateID}\&quot;,\n            \&quot;taxRate\&quot; : {\n              \&quot;name\&quot; : \&quot;TaxRateName\&quot;,\n              \&quot;amount\&quot; : 0.4,\n              \&quot;includedInPrice\&quot; : true,\n              \&quot;country\&quot; : \&quot;DE\&quot;\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>efb2c28b-17ea-403d-b1bf-1526ec54a3a7</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ea7a638c-73dc-4dd9-a64a-504fd57ebb26</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/tax-categories/${tax-category-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>9bd68324-1fd3-476d-8496-1c88408a53b9</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>2f180489-5130-4124-9bbd-2d2491009ac0</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.tax-category-id</defaultValue>
+      <description></description>
+      <id>c21dd510-cb71-442c-a42a-6777c0813171</id>
+      <masked>false</masked>
+      <name>tax-category-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.tax-category-version</defaultValue>
+      <description></description>
+      <id>e6cf3880-7083-46ee-a916-59abe8f07270</id>
+      <masked>false</masked>
+      <name>tax-category-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.taxRateID</defaultValue>
+      <description></description>
+      <id>afab0449-bc6b-42ea-b8c7-f6a53cd0560a</id>
+      <masked>false</masked>
+      <name>taxRateID</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

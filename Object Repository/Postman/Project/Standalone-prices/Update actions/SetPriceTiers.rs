@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetPriceTiers</name>
+   <tag></tag>
+   <elementGuidId>12669c9c-0943-4587-b070-60d9af11c9cc</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${standalone-price-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setPriceTiers\&quot;,\n            \&quot;tiers\&quot; : [ {\n              \&quot;minimumQuantity\&quot; : 100,\n              \&quot;value\&quot; : {\n                \&quot;centAmount\&quot; : 4200,\n                \&quot;currencyCode\&quot; : \&quot;EUR\&quot;,\n                \&quot;type\&quot; : \&quot;centPrecision\&quot;\n              }\n            }, {\n              \&quot;minimumQuantity\&quot; : 1000,\n              \&quot;value\&quot; : {\n                \&quot;centAmount\&quot; : 4000,\n                \&quot;currencyCode\&quot; : \&quot;EUR\&quot;,\n                \&quot;type\&quot; : \&quot;centPrecision\&quot;\n              }\n            } ]\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>069d0954-9899-4f87-b968-c40ffc14cb3f</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>b808682f-4da2-43d4-b88d-2d1d1cb049ca</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/standalone-prices/${standalone-price-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>83702cf5-cc77-40cd-bae3-b5d65ac0a59a</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>ce712fdf-7294-4c6f-b860-41cbf1b77517</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.standalone-price-id</defaultValue>
+      <description></description>
+      <id>ca7039c2-73a2-452b-aa93-950af1ea7e3a</id>
+      <masked>false</masked>
+      <name>standalone-price-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.standalone-price-version</defaultValue>
+      <description></description>
+      <id>3aad4422-b649-4493-b817-c6048e86bcb5</id>
+      <masked>false</masked>
+      <name>standalone-price-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>TransitionState</name>
+   <tag></tag>
+   <elementGuidId>399c9c40-5847-4d54-8a18-e2c4e4a6ab0b</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${quote-request-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;transitionState\&quot;,\n            \&quot;state\&quot; : {\n              \&quot;typeId\&quot; : \&quot;state\&quot;,\n              \&quot;id\&quot; : \&quot;${state-id}\&quot;\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>94946739-a8dc-41a3-b0cc-cd9d34c95d26</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>3e091e48-65c2-4678-8698-ce894c037d49</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/quote-requests/${quote-request-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>f4b08821-42ff-4c67-85f9-7fde69dd1549</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>c4285376-7be2-40fc-822f-e957d777c5f1</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.quote-request-id</defaultValue>
+      <description></description>
+      <id>78e39d7a-e26e-4955-bd06-152a54a07ea9</id>
+      <masked>false</masked>
+      <name>quote-request-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.quote-request-version</defaultValue>
+      <description></description>
+      <id>aeb230dd-0e0c-4cdb-b75d-ad01c30a8c73</id>
+      <masked>false</masked>
+      <name>quote-request-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.state-id</defaultValue>
+      <description></description>
+      <id>608e676b-4c08-45c7-ae7e-c519d9261016</id>
+      <masked>false</masked>
+      <name>state-id</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

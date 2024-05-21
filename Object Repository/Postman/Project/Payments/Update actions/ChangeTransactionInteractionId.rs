@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ChangeTransactionInteractionId</name>
+   <tag></tag>
+   <elementGuidId>1dd464d8-41fe-4e1a-a5f8-93693f7626bc</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${payment-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;changeTransactionInteractionId\&quot;,\n            \&quot;transactionId\&quot; : \&quot;${transactionId}\&quot;,\n            \&quot;interactionId\&quot; : \&quot;${newInteractionId}\&quot;\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>a0d20a3b-ed41-4462-9c9f-52a0458c4b91</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>4c3c2da9-f23c-43db-9404-ad78ab2434b2</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/payments/${payment-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>ad704a5a-ba66-4424-a52d-c159e6c73fed</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>d824dd01-0682-4370-810a-d74baa187982</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.payment-id</defaultValue>
+      <description></description>
+      <id>dc855baa-d001-4304-a9ea-2b50e4548652</id>
+      <masked>false</masked>
+      <name>payment-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.payment-version</defaultValue>
+      <description></description>
+      <id>6687ac4a-ef28-405d-9b9a-73f5ffb495db</id>
+      <masked>false</masked>
+      <name>payment-version</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.transactionId</defaultValue>
+      <description></description>
+      <id>5eefbd8d-0130-4694-a206-05484d909386</id>
+      <masked>false</masked>
+      <name>transactionId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.newInteractionId</defaultValue>
+      <description></description>
+      <id>0e4f24ba-38ee-41e0-b56a-63773360a194</id>
+      <masked>false</masked>
+      <name>newInteractionId</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

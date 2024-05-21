@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>SetAssociates</name>
+   <tag></tag>
+   <elementGuidId>487fb406-986c-4224-aa64-e69dd0c24faf</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${business-unit-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;setAssociates\&quot;,\n            \&quot;associates\&quot; : [ {\n              \&quot;customer\&quot; : {\n                \&quot;typeId\&quot; : \&quot;customer\&quot;,\n                \&quot;id\&quot; : \&quot;some-customer-id\&quot;\n              },\n              \&quot;associateRoleAssignments\&quot; : [ {\n                \&quot;associateRole\&quot; : {\n                  \&quot;typeId\&quot; : \&quot;associate-role\&quot;,\n                  \&quot;key\&quot; : \&quot;admin\&quot;\n                },\n                \&quot;inheritance\&quot; : \&quot;Enabled\&quot;\n              } ]\n            }, {\n              \&quot;customer\&quot; : {\n                \&quot;typeId\&quot; : \&quot;customer\&quot;,\n                \&quot;id\&quot; : \&quot;another-customer-id\&quot;\n              },\n              \&quot;associateRoleAssignments\&quot; : [ {\n                \&quot;associateRole\&quot; : {\n                  \&quot;typeId\&quot; : \&quot;associate-role\&quot;,\n                  \&quot;key\&quot; : \&quot;buyer\&quot;\n                }\n              } ]\n            } ]\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>65031ed6-f57c-425c-b40c-168d85188c2e</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>81b78ace-f4e5-4907-bec9-a6bb210967f2</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/as-associate/${associate-id}/business-units/${business-unit-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>0e270f2a-b3eb-46f7-935b-c0d1b600c7e4</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>c81b4b47-97c1-4ebf-84f3-ef939828d8d5</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.associate-id</defaultValue>
+      <description></description>
+      <id>f72bbe0a-efad-460d-9d13-ae7e27dcdd53</id>
+      <masked>false</masked>
+      <name>associate-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.business-unit-id</defaultValue>
+      <description></description>
+      <id>fcb99b23-5899-4f5b-bf64-b4e185561bf4</id>
+      <masked>false</masked>
+      <name>business-unit-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.business-unit-version</defaultValue>
+      <description></description>
+      <id>4fa81d80-f417-493f-9629-e01f40242a26</id>
+      <masked>false</masked>
+      <name>business-unit-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ExcludeProduct</name>
+   <tag></tag>
+   <elementGuidId>92c459e3-6f52-48aa-84cd-589bfefcc83a</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;version\&quot;: ${product-selection-version},\n    \&quot;actions\&quot;: [\n        {\n            \&quot;action\&quot; : \&quot;excludeProduct\&quot;,\n            \&quot;product\&quot; : {\n              \&quot;typeId\&quot; : \&quot;product\&quot;,\n              \&quot;key\&quot; : \&quot;millennium-falcon\&quot;\n            },\n            \&quot;variantExclusion\&quot; : {\n              \&quot;skus\&quot; : [ \&quot;metallic-white\&quot; ]\n            }\n          }\n    ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>24f95f51-6f4f-49ae-ba19-de0897866c51</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>93572588-12c6-4886-b839-9f8c7da60038</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/product-selections/${product-selection-id}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>5250f006-a45d-44a1-8985-adf2b6fb2820</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>899e6b08-0f5e-4ba0-ba79-e8ed2d03b18e</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-selection-id</defaultValue>
+      <description></description>
+      <id>e50fc4e2-0d0e-4777-80cc-2d6e6546e115</id>
+      <masked>false</masked>
+      <name>product-selection-id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.product-selection-version</defaultValue>
+      <description></description>
+      <id>b4421b24-2068-44c7-bded-0ce74afafcfe</id>
+      <masked>false</masked>
+      <name>product-selection-version</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

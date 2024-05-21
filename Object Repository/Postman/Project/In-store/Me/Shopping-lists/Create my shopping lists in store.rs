@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>Create my shopping lists in store</name>
+   <tag></tag>
+   <elementGuidId>80ddcc79-9a1d-47d8-aa81-002d0c55b746</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot; : {\n    \&quot;en\&quot; : \&quot;My shopping list\&quot;\n  },\n  \&quot;slug\&quot; : {\n    \&quot;en\&quot; : \&quot;my-shopping-list\&quot;\n  },\n  \&quot;customer\&quot; : {\n    \&quot;typeId\&quot; : \&quot;customer\&quot;,\n    \&quot;id\&quot; : \&quot;e73cd97f-846e-44a0-b418-3ed044a8e398\&quot;\n  },\n  \&quot;key\&quot; : \&quot;my-shopping-list\&quot;,\n  \&quot;deleteDaysAfterLastModification\&quot; : 100,\n  \&quot;lineItems\&quot; : [ {\n    \&quot;sku\&quot; : \&quot;product-variant-sku\&quot;,\n    \&quot;quantity\&quot; : 5\n  }, {\n    \&quot;productId\&quot; : \&quot;0e131f46-8d1a-4761-9c83-b45ab5d3501e\&quot;,\n    \&quot;variantId\&quot; : 2\n  } ],\n  \&quot;textLineItems\&quot; : [ {\n    \&quot;name\&quot; : {\n      \&quot;en\&quot; : \&quot;My shopping list item\&quot;\n    },\n    \&quot;description\&quot; : {\n      \&quot;en\&quot; : \&quot;This is a good gift idea\&quot;\n    },\n    \&quot;quantity\&quot; : 5\n  } ]\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer {{ctp_access_token}}</value>
+      <webElementGuid>2e58d1e5-53ca-4d1c-a519-34a27f492202</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>2f04cb01-ec88-4c8f-beaf-62165d97b3f0</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.9</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${host}/${project-key}/in-store/key=${store-key}/me/shopping-lists</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>e75b6c43-3e27-4dad-9d27-36a7e5ce836f</id>
+      <masked>false</masked>
+      <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.project-key</defaultValue>
+      <description></description>
+      <id>3b1888c2-4af7-4808-bb49-d198e05b57bc</id>
+      <masked>false</masked>
+      <name>project-key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.store-key</defaultValue>
+      <description></description>
+      <id>154a8151-e824-48e2-a0f5-c7bc80f3f89c</id>
+      <masked>false</masked>
+      <name>store-key</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>
